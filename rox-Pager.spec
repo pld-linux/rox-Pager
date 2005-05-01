@@ -1,7 +1,7 @@
 %define _name Pager
 %define	_platform %(echo `uname -s`-`uname -m|sed 's/i.86/ix86/'`)
 Summary:	Show a miniature view of your desktop
-Summary(pl):	Pokazuje miniatury Twoich pulpitów
+Summary(pl):	Wy¶wietlanie miniatur pulpitów
 Name:		rox-%{_name}
 Version:	1.0.1
 Release:	1
@@ -25,7 +25,7 @@ ROX-Pager is an applet for the ROX panel that shows you a miniature
 view of your desktop.
 
 %description -l pl
-ROX-Pager jest apletem, który pokazuje miniatury Twoich pulpitów.
+ROX-Pager jest apletem, który pokazuje miniatury pulpitów.
 
 %prep
 %setup -q -n pager-%{version}
@@ -36,7 +36,6 @@ cd %{_name}
 
 %install
 rm -rf $RPM_BUILD_ROOT
-
 install -d $RPM_BUILD_ROOT%{_appsdir}/%{_name}/{Help,%{_platform},Messages}
 install -d $RPM_BUILD_ROOT{%{_desktopdir},%{_pixmapsdir}}
 
