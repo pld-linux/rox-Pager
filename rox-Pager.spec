@@ -1,7 +1,7 @@
 %define _name Pager
 %define	_platform %(echo `uname -s`-`uname -m|sed 's/i.86/ix86/'`)
 Summary:	Show a miniature view of your desktop
-Summary(pl.UTF-8):   Wyświetlanie miniatur pulpitów
+Summary(pl.UTF-8):	Wyświetlanie miniatur pulpitów
 Name:		rox-%{_name}
 Version:	1.0.1
 Release:	1
